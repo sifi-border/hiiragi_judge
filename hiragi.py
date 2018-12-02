@@ -186,8 +186,8 @@ def plot_and_predict(model, X):
 	print("prediction:{}".format(ans_dict[prediction.argmax()]))
 	print("kagami :{:.3f} vs tsukasa:{:.3f}".format(prediction[0][0], prediction[0][1]))
 
-valids = []
 def valid_plt(path):
+	valids = []
 	file_collect(path, valids)
 	for img in valids:
 		plot_and_predict(model, img)
