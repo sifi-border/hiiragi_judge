@@ -1,10 +1,10 @@
 # hiiragi_judge
-- [らき☆すた](http://www.lucky-ch.com)の柊かがみ、柊つかさを識別
-	- 足して１になるように確率で出力
+- [らき☆すた](http://www.lucky-ch.com)の`柊かがみ`、`柊つかさ`を識別
+	- 足して`1`になるように確率で出力
 - 前処理はresizeのみ
-	- グレースケール化したら0.5で落ち着いて終わった
+	- グレースケール化したら`0.5`で落ち着いて終わった
 - 明らかに過学習気味
 	- 要調整
 	- early_stopping
 	- dropout_ratio
-- 画像データは[ここ](file:///Users/yukari/programing/HAIT/animeface-character-dataset/README.html)からお借りしています
+- 画像データは[ここ](http://www.nurs.or.jp/~nagadomi/animeface-character-dataset/README.html)からお借りしています
