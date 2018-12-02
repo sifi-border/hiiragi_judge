@@ -86,8 +86,6 @@ for X in [X_train, X_test]:
 		plt.show()
 		'''
 
-y_train = np.identity(num_classes)[y_train].astype('i')
-y_test = np.identity(num_classes)[y_test].astype('i')
 
 from sklearn.model_selection import train_test_split
 X = np.concatenate([X_train, X_test], axis=0)
@@ -179,10 +177,9 @@ plot_history_loss(hist)
 plot_history_acc(hist)
 
 def plot_and_predict(model, X):
-	Xin = X
-	plt.imshow(Xin)
+	plt.imshow(X)
 	plt.show()
-	prediction = model.predict(Xin.reshape((1, img_h, img_w, 3)))
+	prediction = model.predict(X.reshape((1, img_h, img_w, 3)))
 	print("prediction:{}".format(ans_dict[prediction.argmax()]))
 	print("kagami :{:.3f} vs tsukasa:{:.3f}".format(prediction[0][0], prediction[0][1]))
 
